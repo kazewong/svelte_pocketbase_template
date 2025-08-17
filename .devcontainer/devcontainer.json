@@ -1,0 +1,19 @@
+{
+  "name": "SvelteKit + PocketBase Dev Container",
+  "build": {
+    "dockerfile": "../Containerfile",
+    "context": ".."
+  },
+  "forwardPorts": [5173, 8090],
+  "postCreateCommand": "npm install",
+  "workspaceFolder": "/app",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "features": {},
+  "extensions": [
+    "svelte.svelte-vscode",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint"
+  ]
+}
