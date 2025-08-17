@@ -15,7 +15,7 @@ RUN apt update && apt install -y \
 
 # Download PocketBase binary (linux amd64)
 RUN wget https://github.com/pocketbase/pocketbase/releases/download/v${PB_VERSION}/pocketbase_${PB_VERSION}_linux_amd64.zip && \
-    unzip pocketbase_${PB_VERSION}_linux_amd64.zip && \
+    unzip pocketbase_${PB_VERSION}_linux_amd64.zip -d /usr/local/bin && \
     rm pocketbase_${PB_VERSION}_linux_amd64.zip
 
 # Copy package files and install dependencies
