@@ -1,4 +1,4 @@
-FROM node:24.6.0-bookworm
+FROM node:24.6.0-bookworm-slim
 
 # Install wget for downloading PocketBase
 RUN apt-get update && apt-get install -y wget && rm -rf /var/lib/apt/lists/*
